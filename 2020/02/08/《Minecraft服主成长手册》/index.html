@@ -1,0 +1,186 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="frea,freamail@gmail.com"><title>《Minecraft服主成长手册》 · Frea's Blog</title><meta name="description" content="《Minecraft服主成长手册》（技术向）前言
+我为什么要写这套教程？我是『清风和煦』服务器的创办人兼服主Frea 从2017年年初开始我便对Minecraft服务器技术有兴趣 并着手建立自己的服务器 至今已有三年
+而早在一年前 我对Minecraft本身及Minecraft的兴趣日渐减退（我大概"><meta name="keywords" content="Minecraft,Server,Games"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"></head><body><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">Frea's Blog</a></h3><div class="description"><p>Frea的博客</p></div></div></div><ul class="social-links"><li><a href="http://github.com/LoveFrea"><i class="fa fa-github"></i></a></li></ul><div class="footer"><a target="_blank" href="/"><span>Theme by </span></a><a href="https://www.caicai.me"> CaiCai </a><span>&</span><a href="https://github.com/Ben02/hexo-theme-Anatole"> Ben</a><div class="by_farbox"><a href="https://hexo.io/zh-cn/" target="_blank">Proudly published with Hexo&#65281;</a></div></div></div><div class="main"><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">首页</a></li><li><a href="/about">关于</a></li><li><a href="/archives">归档</a></li><li><a href="/links">友链</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li></div><div class="avatar"><img src="/images/favicon.png"></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>《Minecraft服主成长手册》</a></h3></div><div class="post-content"><h2 id="《Minecraft服主成长手册》（技术向）"><a href="#《Minecraft服主成长手册》（技术向）" class="headerlink" title="《Minecraft服主成长手册》（技术向）"></a>《Minecraft服主成长手册》（技术向）</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><hr>
+<h4 id="我为什么要写这套教程？"><a href="#我为什么要写这套教程？" class="headerlink" title="我为什么要写这套教程？"></a>我为什么要写这套教程？</h4><p>我是『清风和煦』服务器的创办人兼服主Frea 从2017年年初开始我便对Minecraft服务器技术有兴趣 并着手建立自己的服务器 至今已有三年</p>
+<p>而早在一年前 我对Minecraft本身及Minecraft的兴趣日渐减退（我大概是老了 曾经一腔热情已消耗殆尽）况且我不可能开一辈子的服 曾经也有过撰写技术向教程的想法 缺迟迟没有动工 现今有了时间和灵感 不如在完全“退休”之前实现它 了此心愿</p>
+<p>这段时间的服务器运营经历 使我积累了不少经验 在开服不断探索的过程中也踩过不少坑 遇过不少困难阻碍 我希望将这些经验传授给后来者 以少走弯路 致像我曾经一样迷茫的人</p>
+<p>这三年 因习惯一人单干 且不擅长与他人协作的原因 服务器里外事务基本一人独扛 也曾渴望能有合适的伙伴来与我共同做这些事 但一直没有发现（谁有既有一身才能 又心甘情愿的跟着你用爱发电啊）</p>
+<p>（借着这个机会也许能找到理想的接班人）</p>
+<h4 id="你为什么要开服？"><a href="#你为什么要开服？" class="headerlink" title="你为什么要开服？"></a>你为什么要开服？</h4><p>在此之前 我想和你聊聊 你为什么要开服？</p>
+<p>为了和认识的小伙伴们一起联机？过一把把权力至高无上OP的隐？开一个商业服务器并从中获利？</p>
+<p>我不管你是因何种要开服（而且我也管不着）但我更希望你能开一个好服 对这份差事抱着敬畏 做一个对玩家负责的好管理者</p>
+<p>在决定要做服主之前 希望你考虑好</p>
+<p>开服 你需要具备 耐心 不断探索的好奇心</p>
+<p>开服是件辛苦的事 且会占用你大量的时间 特别是在前期中期 电脑前一坐就是数个小时以上 通宵达旦制作完善服务端 挖空心思宣传招揽玩家 排除故障 埋头在密密麻麻的错误信息中寻找答案 搜索发帖求助…  处理玩家之间的矛盾纠纷 惩罚熊孩子 应付突发事件…… 为了使服务器保持活力 你还要不定期的筹划各种活动……</p>
+<p>开服也是件有意思的事 尝试大量的有趣的插件 将新学会的技术应用到服务器上 并体验其中的乐趣 以及成功带来的成就感 在这个过程中 你会主动/被动的去了解 学习以前从未接触过的知识 时间长了 你会发现无形中掌握了不少技能 尽管只是皮毛而已</p>
+<p>渐渐的 你的思维也会发生改变 你会以一个构建者的视角来理解游戏 理解服务器是如何工作的 这在以前可能是没有过的体验</p>
+<p>通过管理玩家 管理团队 你可以提升你的管理能力及人际交往能力 接触更多的人 发展自己的人脉 更是作为一服之主的身份 能给你带来一定的名誉和声望</p>
+<h4 id="做服主一定要懂技术吗？"><a href="#做服主一定要懂技术吗？" class="headerlink" title="做服主一定要懂技术吗？"></a>做服主一定要懂技术吗？</h4><p>不一定 我也认识一些服主 他们有一些人只懂得一点点的技术 同时他们的能力更侧重于策划 管理 而且他们可能会聘请另外一个人负责服务器的技术</p>
+<p>如果你没有团队/合伙人 想要独自撑起一个服务器 技术是必要的</p>
+<p>而且通常做技术维护的人 手握着服务器的命脉 你不会轻易的完全把命脉交给别人吧（即便你聘请了技术 也不要认为自己就可以高枕无忧了 你就不好奇你的技术人员每天都在做什么吗 别等到被删库跑路了 还不知道发生了什么 那才是最可悲的 再者 如果你想把自己的想法清楚的表达给对方 了解一些这方面的语言会容易很多）</p>
+<p>如果你不懂的技术 做任何事都抱着疑惑 且小心翼翼 甚至会因缺乏经验 造成了不可挽回的灾难（明白自己在做什么 不是件好事吗）</p>
+<p>所以 我认为每一个服主 或多或少都一定懂技术</p>
+<h4 id="教程开始"><a href="#教程开始" class="headerlink" title="教程开始"></a>教程开始</h4><p>本教程将会一步一个脚印 渐进的带领你 从最简单的官服 到插件服 再到群组 及其他高级应用 旨在普及知识 建设一个专业化 高质量的服务器</p>
+<p>说在最前面 “专业的技术不是你在他人面前秀肌肉 吹嘘的资本 技术本是为了解决问题而生 技术也没有高低之分 合适的 能有效解决问题的就是好技术”</p>
+<p>本教程是写给具有基本的计算机基础的读者看的 如果你连基本的文件管理 上网获取信息的能力都没有 就更别提开服了（据我所知现今教育部还是很重视中小学信息技术的教育的 而且高二学生都要参加一级计算机考试的吧）</p>
+<p>如果你真的不会 那也不必着急 买本计算机基础入门教材 如《中老年人学电脑》先看看吧</p>
+<p>除了计算机基础知识以外 你还要了解TCP/IP 以及C/S工作模型 这些网络相关的知识（别看说的似乎很高大上 其实是很简单的东西）如果有可能 你最好还了解一点点的计算机程序设计思想（非必需 但有助于你后面理解一些东西）</p>
+<p>以及你最好有一定的英语基础 因为往后打交道的通常是英文</p>
+<p>英语很差怎么办 没关系 在弄懂了一些常见高频的词汇后 你也能看懂一二了 你还可以借助翻译工具 总之你绝对不要害怕它  而且许多都是计算机术语 或MC特定的译名 这和通用英语不同 每个人都要从新认识 在这个过程中甚至可以提高你的英语水平 增加词汇积累 特别是在做汉化插件等工作</p>
+<p>如果你有良好的英语基础 你则可以畅游各大MC英文论坛 寻找及使用未被搬运至国内的优秀插件 毕竟国外在这方面的资料更丰富</p>
+<p>除了上述内容以外 还有一点很重要 熟悉Minecraft的游玩（我想大多数能找到本教材的都应该会）毕竟先做好一个玩家 才能做好服务器管理者</p>
+<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><p>准备工作</p>
+<ul>
+<li>必备软件工具</li>
+<li>常用网站</li>
+<li>如何正确的获取信息与提问</li>
+</ul>
+<p>基础篇</p>
+<ul>
+<li>基础知识科普</li>
+<li>服务端种类及差异</li>
+<li>服务端的搭建与运行<ul>
+<li>运行环境部署</li>
+<li>服务端目录/文件详解</li>
+</ul>
+</li>
+<li><p>插件的安装调试与配置</p>
+<ul>
+<li>版本兼容性与依赖关系</li>
+<li>YAML语法基础</li>
+<li>JSON语法基础</li>
+<li>权限分配与管理</li>
+<li>命令</li>
+<li>常用基础插件介绍</li>
+</ul>
+</li>
+<li><p>域名的注册与解析</p>
+<ul>
+<li>域名后缀</li>
+<li>解析记录</li>
+</ul>
+</li>
+<li><p>服务器的租用与选购</p>
+<ul>
+<li>服务器硬件配置需求</li>
+<li>服务器种类<ul>
+<li>面板服务器</li>
+<li>VPS服务器<ul>
+<li>安装自定义系统</li>
+</ul>
+</li>
+<li>实体服务器</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>数据备份与迁移<ul>
+<li>数据备份</li>
+<li>数据迁移</li>
+</ul>
+</li>
+</ul>
+<p>进阶篇</p>
+<ul>
+<li>BungeeCord群组应用</li>
+<li>MySQL数据库应用</li>
+<li>使用Linux开服</li>
+</ul>
+<p>服务器安全</p>
+<ul>
+<li>系统环境安全<ul>
+<li>Window/Linux防火墙</li>
+</ul>
+</li>
+<li>玩家身份验证</li>
+<li>玩家行为监控记录</li>
+<li>反作弊</li>
+</ul>
+<p>服务器维护</p>
+<ul>
+<li><p>检查与安装更新</p>
+</li>
+<li><p>故障排除</p>
+<ul>
+<li>检查网络连通性</li>
+<li>服务端常见错误信息</li>
+</ul>
+</li>
+</ul>
+<p>服务器上线</p>
+<ul>
+<li><p>门面工程</p>
+<ul>
+<li>名称与LOGO</li>
+</ul>
+</li>
+<li><p>服务器宣传</p>
+<ul>
+<li>宣传途径<ul>
+<li>MCBBS宣传</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>服务器官网</p>
+<p>其他小技巧</p>
+<ul>
+<li>多版本支持</li>
+</ul>
+<p>扩展</p>
+<ul>
+<li>内网开服<ul>
+<li>公网直连</li>
+<li>内网穿透</li>
+</ul>
+</li>
+<li>正版&amp;盗版混合验证<ul>
+<li>正版玩家白名单自动放行</li>
+</ul>
+</li>
+<li>多BungeeCord数据同步</li>
+<li>JavaEdition服务器对BedrockEdition客户端的支持</li>
+<li>一端一图 跨服同步</li>
+<li>正版验证代理</li>
+<li>服务器邮箱</li>
+<li>组装自己的实体服务器</li>
+</ul>
+<h4 id="必备软件工具"><a href="#必备软件工具" class="headerlink" title="必备软件工具"></a>必备软件工具</h4><p>如果你认为你已经准备好步入服主生涯 那么就开始吧</p>
+<p>毋庸置疑 运行维护服务器需要一台电脑作为你日常工作的平台 而在你的电脑上需要准备一些必要的软件工具 本教材以Windows操作习题为例</p>
+<ul>
+<li>一个文本编辑器</li>
+</ul>
+<p>通常可以是Notepad++ Atom SublimeText3 或VisualStudio Code等 用于查看或编辑配置文件 以上任意一种即可 不必太过纠结 至少具备文件编码转换 代码高亮等功能</p>
+<ul>
+<li>一个网页浏览器</li>
+</ul>
+<p>推荐使用Firefox（火狐）或Chrome（谷歌浏览器）以及Edge（Win10自带浏览器）</p>
+<p>如果你平时习惯使用QQ浏览器 搜狗浏览器 之类的国产浏览器 我也不反对</p>
+<ul>
+<li>服务器远程管理终端</li>
+</ul>
+<p>使用什么样的终端取决于被远程管理的服务器运行的操作系统 如果是Windows 使用系统自带的“远程桌面连接”（mstsc.exe）即可 如果你在其他系统下 如Linux 则可以使用桌面自带的远程连接工具或xrdp 如果你是Android/iOS移动设备 则可以选择RDClient（Remote Desktop Client）</p>
+<p>如果被管理的服务器是Linux操作系统 通常可以通过SSH（命令行）或VNC（图形桌面）这方面可用的软件就很多了 如PuTTY Xshell SecureCRT等 而VNC则有VNC Viewer 若是Android/iOS移动设备 则可以用JuiceSSH</p>
+<p>此外你还需要一个SFTP客户端来上传下载及远程管理文件 如WinSCP FlashFXP等</p>
+<p>更多细节会在以后的篇章中讲到</p>
+<ul>
+<li>“科学上网”工具</li>
+</ul>
+<p>“科学上网”几乎是每个IT人的必备技能 此部分内容较敏感 便不多作介绍</p>
+<p>“科学上网”允许你在国内使用一般情况下无法访问的网络服务 如谷歌搜索 或者可以加速一些海外网站 解决页面打开过慢或无法打开页面的问题 这对于提高你的工作效率非常实用 也不必天天求人代下资源</p>
+<h4 id="常用网站"><a href="#常用网站" class="headerlink" title="常用网站"></a>常用网站</h4><p>这里整理了一份可能会经常用到的网站列表 希望对你有所帮助</p>
+<p>Minecraft官方维基 <a href="https://minecraft-zh.gamepedia.com/Minecraft_Wiki" target="_blank" rel="noopener">https://minecraft-zh.gamepedia.com/Minecraft_Wiki</a></p>
+<p>SpigotMC论坛（插件板块） <a href="https://www.spigotmc.org/resources" target="_blank" rel="noopener">https://www.spigotmc.org/resources</a></p>
+<p>Bukkit论坛（插件版块）<a href="https://dev.bukkit.org/projects" target="_blank" rel="noopener">https://dev.bukkit.org/projects</a></p>
+<p>MCBBS论坛 <a href="http://www.mcbbs.net/forum.php" target="_blank" rel="noopener">http://www.mcbbs.net/forum.php</a></p>
+<p>WIKI.VG <a href="https://wiki.vg" target="_blank" rel="noopener">https://wiki.vg</a></p>
+<p>Minecraft星球 <a href="https://www.planetminecraft.com" target="_blank" rel="noopener">https://www.planetminecraft.com</a></p>
+<h4 id="服务端的种类及差异"><a href="#服务端的种类及差异" class="headerlink" title="服务端的种类及差异"></a>服务端的种类及差异</h4><p>有经验的玩家可能知道 我们平时想要联机 通常是使用客户端自带的功能（暂停菜单中的 “开放到局域网”）再配合Hamachi（蛤蟆吃）或游侠 来组建一个虚拟的局域网 从而把身在不同网络异地的玩家拉在一起</p>
+<p>再者 就是官方付费的Realm服务（在线世界）</p>
+<p>为什么要讲这个呢 为了后面方便更好的理解服务器</p>
+<h2 id="施工中……"><a href="#施工中……" class="headerlink" title="施工中……"></a>施工中……</h2><p>这是草稿 未来可能会考虑分页</p>
+<p><em>本套教程仅在个人博客上发表 未经允许 不得转载！</em></p>
+<hr>
+<p><a rel="noopener" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a><br>本作品采用<a rel="noopener" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">知识共享署名-相同方式共享 4.0 国际许可协议</a>进行许可。</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2020-02-08</span><i class="fa fa-tag"></i></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" href="http://twitter.com/home?status=,http://imfrea.com/2020/02/08/《Minecraft服主成长手册》/,Frea's Blog,《Minecraft服主成长手册》,;"></a></div></div><div class="pagination"><ul class="clearfix"><li class="next pagbuttons"><a class="btn" role="navigation" href="/2020/02/06/辣鸡博客再复活/" title="辣鸡博客再复活">下一篇</a></li></ul></div></div></div></div></div><script src="/js/jquery.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script></body></html>
