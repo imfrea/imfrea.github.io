@@ -29,16 +29,16 @@
 <p>英语很差怎么办 没关系 在弄懂了一些常见高频的词汇后 你也能看懂一二了 你还可以借助翻译工具 总之你绝对不要害怕它  而且许多都是计算机术语 或MC特定的译名 这和通用英语不同 每个人都要从新认识 在这个过程中甚至可以提高你的英语水平 增加词汇积累 特别是在做汉化插件等工作</p>
 <p>如果你有良好的英语基础 你则可以畅游各大MC英文论坛 寻找及使用未被搬运至国内的优秀插件 毕竟国外在这方面的资料更丰富</p>
 <p>除了上述内容以外 还有一点很重要 熟悉Minecraft的游玩（我想大多数能找到本教材的都应该会）毕竟先做好一个玩家 才能做好服务器管理者</p>
-<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><p>准备工作</p>
+<h3 id="目录-编辑完善中"><a href="#目录-编辑完善中" class="headerlink" title="目录 //编辑完善中"></a>目录 //编辑完善中</h3><p>准备工作</p>
 <ul>
-<li>必备软件工具</li>
-<li>常用网站</li>
+<li><a href="needed-tools">必备软件工具</a></li>
+<li><a href="usefull-sites">常用网站</a></li>
 <li>如何正确的获取信息与提问</li>
 </ul>
 <p>基础篇</p>
 <ul>
 <li>基础知识科普</li>
-<li>服务端种类及差异</li>
+<li><a href="#server-types">服务端种类及差异</a></li>
 <li>服务端的搭建与运行<ul>
 <li>运行环境部署</li>
 <li>服务端目录/文件详解</li>
@@ -112,6 +112,7 @@
 <li><p>门面工程</p>
 <ul>
 <li>名称与LOGO</li>
+<li>服务器官网</li>
 </ul>
 </li>
 <li><p>服务器宣传</p>
@@ -123,14 +124,13 @@
 </ul>
 </li>
 </ul>
-<p>服务器官网</p>
 <p>其他小技巧</p>
 <ul>
 <li>多版本支持</li>
 </ul>
 <p>扩展</p>
 <ul>
-<li>内网开服<ul>
+<li>家庭宽带开服<ul>
 <li>公网直连</li>
 <li>内网穿透</li>
 </ul>
@@ -146,12 +146,12 @@
 <li>服务器邮箱</li>
 <li>组装自己的实体服务器</li>
 </ul>
-<h4 id="必备软件工具"><a href="#必备软件工具" class="headerlink" title="必备软件工具"></a>必备软件工具</h4><p>如果你认为你已经准备好步入服主生涯 那么就开始吧</p>
-<p>毋庸置疑 运行维护服务器需要一台电脑作为你日常工作的平台 而在你的电脑上需要准备一些必要的软件工具 本教材以Windows操作习题为例</p>
+<hr>
+<h3 id="正文开始"><a href="#正文开始" class="headerlink" title="正文开始"></a>正文开始</h3><h4 id="必备软件工具"><a href="#必备软件工具" class="headerlink" title="必备软件工具"></a><span id="needed-tools">必备软件工具</span></h4><p>如果你认为你已经准备好步入服主生涯 那么就开始吧<br>毋庸置疑 运行维护服务器需要一台电脑作为你日常工作的平台 而在你的电脑上需要准备一些必要的软件工具 本教材以Windows操作习题为例</p>
 <ul>
 <li>一个文本编辑器</li>
 </ul>
-<p>通常可以是Notepad++ Atom SublimeText3 或VisualStudio Code等 用于查看或编辑配置文件 以上任意一种即可 不必太过纠结 至少具备文件编码转换 代码高亮等功能</p>
+<p>通常可以是<a href="https://notepad-plus-plus.org/" target="_blank" rel="noopener">Notepad++</a> <a href="https://atom.io/" target="_blank" rel="noopener">Atom</a> <a href="https://www.sublimetext.com/3" target="_blank" rel="noopener">SublimeText3</a> 或<a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VisualStudio Code</a>等 用于查看或编辑配置文件 以上任意一种即可 不必太过纠结 至少具备文件编码转换 代码高亮等功能</p>
 <ul>
 <li>一个网页浏览器</li>
 </ul>
@@ -160,27 +160,25 @@
 <ul>
 <li>服务器远程管理终端</li>
 </ul>
-<p>使用什么样的终端取决于被远程管理的服务器运行的操作系统 如果是Windows 使用系统自带的“远程桌面连接”（mstsc.exe）即可 如果你在其他系统下 如Linux 则可以使用桌面自带的远程连接工具或xrdp 如果你是Android/iOS移动设备 则可以选择RDClient（Remote Desktop Client）</p>
-<p>如果被管理的服务器是Linux操作系统 通常可以通过SSH（命令行）或VNC（图形桌面）这方面可用的软件就很多了 如PuTTY Xshell SecureCRT等 而VNC则有VNC Viewer 若是Android/iOS移动设备 则可以用JuiceSSH</p>
-<p>此外你还需要一个SFTP客户端来上传下载及远程管理文件 如WinSCP FlashFXP等</p>
+<p>使用什么样的终端取决于被远程管理的服务器运行的操作系统 如果是Windows 使用系统自带的“远程桌面连接”（mstsc.exe）即可 如果你在其他系统下 如Linux 则可以使用桌面自带的远程连接工具或xrdp 如果你是Android/iOS移动设备 则可以选择<a href="https://play.google.com/store/apps/details?id=com.microsoft.rdc.android" target="_blank" rel="noopener">RDClient</a>（Remote Desktop Client）</p>
+<p>如果被管理的服务器是Linux操作系统 通常可以通过SSH（命令行）或VNC（图形桌面）这方面可用的软件就很多了 如<a href="https://www.putty.org/" target="_blank" rel="noopener">PuTTY</a> SecureCRT Mobaxterm Termius等（如果你是Win10 还可以使用自带的OpenSSH客户端 打开任意CMD或Powershell输入ssh即可）<br>若是Android/iOS移动设备 则可以用<a href="https://play.google.com/store/apps/details?id=com.sonelli.juicessh" target="_blank" rel="noopener">JuiceSSH</a><br>而VNC则有<a href="https://www.realvnc.com/en/connect/download/viewer/" target="_blank" rel="noopener">VNC Viewer</a> </p>
+<p>此外你还需要一个SFTP客户端来上传下载及远程管理文件 如<a href="https://winscp.net/eng/download.php" target="_blank" rel="noopener">WinSCP</a> FlashFXP等</p>
 <p>更多细节会在以后的篇章中讲到</p>
 <ul>
 <li>“科学上网”工具</li>
 </ul>
 <p>“科学上网”几乎是每个IT人的必备技能 此部分内容较敏感 便不多作介绍</p>
 <p>“科学上网”允许你在国内使用一般情况下无法访问的网络服务 如谷歌搜索 或者可以加速一些海外网站 解决页面打开过慢或无法打开页面的问题 这对于提高你的工作效率非常实用 也不必天天求人代下资源</p>
-<h4 id="常用网站"><a href="#常用网站" class="headerlink" title="常用网站"></a>常用网站</h4><p>这里整理了一份可能会经常用到的网站列表 希望对你有所帮助</p>
-<p>Minecraft官方维基 <a href="https://minecraft-zh.gamepedia.com/Minecraft_Wiki" target="_blank" rel="noopener">https://minecraft-zh.gamepedia.com/Minecraft_Wiki</a></p>
-<p>SpigotMC论坛（插件板块） <a href="https://www.spigotmc.org/resources" target="_blank" rel="noopener">https://www.spigotmc.org/resources</a></p>
-<p>Bukkit论坛（插件版块）<a href="https://dev.bukkit.org/projects" target="_blank" rel="noopener">https://dev.bukkit.org/projects</a></p>
-<p>MCBBS论坛 <a href="http://www.mcbbs.net/forum.php" target="_blank" rel="noopener">http://www.mcbbs.net/forum.php</a></p>
-<p>WIKI.VG <a href="https://wiki.vg" target="_blank" rel="noopener">https://wiki.vg</a></p>
-<p>Minecraft星球 <a href="https://www.planetminecraft.com" target="_blank" rel="noopener">https://www.planetminecraft.com</a></p>
-<h4 id="服务端的种类及差异"><a href="#服务端的种类及差异" class="headerlink" title="服务端的种类及差异"></a>服务端的种类及差异</h4><p>有经验的玩家可能知道 我们平时想要联机 通常是使用客户端自带的功能（暂停菜单中的 “开放到局域网”）再配合Hamachi（蛤蟆吃）或游侠 来组建一个虚拟的局域网 从而把身在不同网络异地的玩家拉在一起</p>
-<p>再者 就是官方付费的Realm服务（在线世界）</p>
-<p>为什么要讲这个呢 为了后面方便更好的理解服务器</p>
-<h2 id="施工中……"><a href="#施工中……" class="headerlink" title="施工中……"></a>施工中……</h2><p>这是草稿 未来可能会考虑分页</p>
-<p><em>本套教程仅在个人博客上发表 未经允许 不得转载！</em></p>
+<h4 id="常用网站"><a href="#常用网站" class="headerlink" title="常用网站"></a><span id="usefull-sites">常用网站</span></h4><p>这里整理了一份可能会经常用到的网站列表 希望对你有所帮助</p>
+<p>Minecraft官方维基 <a href="https://minecraft-zh.gamepedia.com/Minecraft_Wiki" target="_blank" rel="noopener">https://minecraft-zh.gamepedia.com/Minecraft_Wiki</a><br>SpigotMC论坛（插件板块） <a href="https://www.spigotmc.org/resources" target="_blank" rel="noopener">https://www.spigotmc.org/resources</a><br>Bukkit论坛（插件版块）<a href="https://dev.bukkit.org/projects" target="_blank" rel="noopener">https://dev.bukkit.org/projects</a><br>MCBBS论坛 <a href="http://www.mcbbs.net/forum.php" target="_blank" rel="noopener">http://www.mcbbs.net/forum.php</a><br>WIKI.VG <a href="https://wiki.vg" target="_blank" rel="noopener">https://wiki.vg</a><br>Minecraft星球 <a href="https://www.planetminecraft.com" target="_blank" rel="noopener">https://www.planetminecraft.com</a><br>Blingwang的Minecraft资源下载索引 <a href="https://labs.blw.moe/down" target="_blank" rel="noopener">https://labs.blw.moe/down</a>  </p>
+<h4 id="服务端的种类及差异"><a href="#服务端的种类及差异" class="headerlink" title="服务端的种类及差异"></a><span id="server-types">服务端的种类及差异</span></h4><p>说到服务器 就不得不提传统的联机方式 有经验的玩家可能知道 我们平时想要联机 通常是使用客户端自带的功能（暂停菜单中的 “<strong><em>开放到局域网</em></strong>”）再配合Hamachi（蛤蟆吃）或游侠 来组建一个虚拟的局域网 从而把身在异地不同网络中的玩家连接在一起  </p>
+<p>再者 就是官方付费的<strong><em>Realm</em></strong>服务（在线世界）  </p>
+<p>以上两种 你通常只有多人游戏的OP（管理员）权限 而无法接触服务器后台（也没有必要）这对于玩家来说 是不透明的  </p>
+<p>接着 就是<strong><em>“Minecraft Server”官方服务器</em></strong>（以下简称官服）<br>Mojang每次在发布一个版本的同时 也会提供其服务端供玩家下载（Minecraft.net官网新版本资讯底端/官方启动器中可以找到下载链接）<br>通常是一个名为“server.jar”的文件 双击即可运行 用法非常简单（别忘了新建一个空文件夹把它丢进去 不然生成的服务端数据文件会到处都是）<br>官服相比一开始提到的两种联机方式有着更高的定制性（你可以编辑服务端配置文件为你想要的效果）<br>官服的优点是稳定 更新及时（与最新版本的客户端同时释出） 其缺点也很明显 性能差 消耗资源高（相对而言）  </p>
+<p>无论是客户端自带的“开放到局域网” 还是Realm 或者是Minecraft Server官服 他们都不能安装第三方插件或MOD！</p>
+<hr>
+<h2 id="施工中……"><a href="#施工中……" class="headerlink" title="施工中……"></a>施工中……</h2><p>这是草稿 未来可能会考虑分页  </p>
+<p><strong><em>本教程仅在个人博客上发表 未经允许 不得转载！</em></strong></p>
 <hr>
 <p><a rel="noopener" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a><br>本作品采用<a rel="noopener" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">知识共享署名-相同方式共享 4.0 国际许可协议</a>进行许可。</p>
-</div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2020-02-08</span><i class="fa fa-tag"></i></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" href="http://twitter.com/home?status=,http://imfrea.com/2020/02/08/《Minecraft服主成长手册》/,Frea's Blog,《Minecraft服主成长手册》,;"></a></div></div><div class="pagination"><ul class="clearfix"><li class="next pagbuttons"><a class="btn" role="navigation" href="/2020/02/06/辣鸡博客再复活/" title="辣鸡博客再复活">下一篇</a></li></ul></div></div></div></div></div><script src="/js/jquery.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script></body></html>
+</div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2020-02-08</span><i class="fa fa-tag"></i></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" href="http://twitter.com/home?status=,http://imfrea.com/2020/02/08/《Minecraft服主成长手册》/,Frea's Blog,《Minecraft服主成长手册》,;"></a></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/2020/02/08/我对Minecraft评价（有感而发）/" title="我对Minecraft评价（有感而发）">上一篇</a></li><li class="next pagbuttons"><a class="btn" role="navigation" href="/2020/02/06/辣鸡博客再复活/" title="辣鸡博客再复活">下一篇</a></li></ul></div></div></div></div></div><script src="/js/jquery.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script></body></html>
